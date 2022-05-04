@@ -11,6 +11,7 @@ public class PhoneListApp {
 
 	public static void main(String[] args) throws IOException {
 
+		List<Person> pList = new ArrayList<Person>();
 		Reader fr = new FileReader("/Users/choijungphil/javaStudy/file/PhoneDB_원본.txt");
 		BufferedReader br = new BufferedReader(fr);
 
@@ -22,11 +23,9 @@ public class PhoneListApp {
 			}
 			String[] info = str.split(",");
 			Person p = new Person(info[0], info[1], info[2]);
-			System.out.println(p);
+			p.showInfo();
 
 		}
-
-		List<Person> pList = new ArrayList<Person>();
 
 		br.close();
 
