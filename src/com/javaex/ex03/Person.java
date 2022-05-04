@@ -8,12 +8,8 @@ public class Person {
 	private String company;
 
 	// 생성자
-	public Person(String name) {
-		this.name = name;
-
-	}
-
 	public Person(String name, String hp, String company) {
+		super();
 		this.name = name;
 		this.hp = hp;
 		this.company = company;
